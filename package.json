@@ -1,0 +1,9 @@
+{
+  "name": "semantic-release-helm",
+  "version": "1.0.0",
+  "description": "semantic-release plugin to update appVersion in a Helm chart",
+  "main": "index.js",
+  "repository": "https://github.com/m1pl/semantic-release-helm.git",
+  "author": "Mihai Plasoianu <mihai@plasoianu.de>",
+  "license": "MIT"
+}
