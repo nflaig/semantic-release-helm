@@ -26,6 +26,13 @@ Chart directory, where the _Chart.yaml_ is located.
 - registry (optional)  
 URI of a container registry.
 
+Pass credentials through environment variables accordingly:
+
+```
+export REGISTRY_USERNAME=<USERNAME>
+export REGISTRY_PASSWORD=<PASSWORD>
+```
+
 ## Example
 
 This will update versions in `./chart/Chart.yaml`
