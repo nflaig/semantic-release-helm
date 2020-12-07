@@ -7,6 +7,8 @@
   "author": "Mihai Plasoianu <mihai@plasoianu.de>",
   "license": "MIT",
   "dependencies": {
+    "aggregate-error": "^3.1.0",
+    "execa": "^5.0.0",
     "fs": "^0.0.1-security",
     "js-yaml": "^3.14.0",
     "path": "^0.12.7",

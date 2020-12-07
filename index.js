@@ -1,21 +1,33 @@
 const verifyChart = require('./lib/verify');
 const prepareChart = require('./lib/prepare');
+const publishChart = require('./lib/publish');
 
-let verified;
-let prepared;
+let verified = true;
+let prepared = true;
 
 async function verify(pluginConfig, context) {
-    await verifyChart(pluginConfig);
+    await verifyChart(pluginConfig, context);
     verified = true;
 }
 
 async function prepare(pluginConfig, context) {
     if (!verified) {
-        await verifyChart(pluginConfig);
+        await verifyChart(pluginConfig, context);
     }
 
     await prepareChart(pluginConfig, context);
     prepared = true;
 }
 
-module.exports = {verify, prepare};
+async function publish(pluginConfig, context) {
+    if (!verified) {
+        await verifyChart(pluginConfig, context);
+    }
+    if (!prepared) {
+        await prepareChart(pluginConfig, context);
+    }
+
+    await publishChart(pluginConfig, context);
+}
+
+module.exports = {verify, prepare, publish};

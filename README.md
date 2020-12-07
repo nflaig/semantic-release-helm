@@ -20,9 +20,17 @@ The `appVersion` is set to `nextRelease.version`.
 
 ## Configuration
 
-The plugin requires a single option `chartPath`
-which points to the chart directory,
-where the _Chart.yaml_ is located.
+- path (required)  
+Chart directory, where the _Chart.yaml_ is located.
+
+- registry (optional)  
+URI of a container registry.
+
+## Example
+
+This will update versions in `./chart/Chart.yaml`
+and push the chart to `localhost:5000/repo/chart`.
+The image will be tagged with the value of `version` from _Chart.yaml_.
 
 ```
 {
@@ -30,7 +38,8 @@ where the _Chart.yaml_ is located.
     [
       "semantic-release-helm",
       {
-        chartPath: '/path/to/chart'
+        path: './chart',
+        registry: 'localhost:5000/repo/chart'
       }
     ]
   ]
