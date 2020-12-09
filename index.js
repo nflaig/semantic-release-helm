@@ -1,11 +1,11 @@
-const verifyChart = require('./lib/verify');
+const verifyChart = require('./lib/verifyConditions');
 const prepareChart = require('./lib/prepare');
 const publishChart = require('./lib/publish');
 
 let verified = false;
 let prepared = false;
 
-async function verify(pluginConfig, context) {
+async function verifyConditions(pluginConfig, context) {
     await verifyChart(pluginConfig, context);
     verified = true;
 }
@@ -30,4 +30,4 @@ async function publish(pluginConfig, context) {
     await publishChart(pluginConfig, context);
 }
 
-module.exports = {verify, prepare, publish};
+module.exports = {verifyConditions, prepare, publish};
