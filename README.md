@@ -18,6 +18,22 @@ or _null_ if it's not valid.
 
 The `appVersion` is set to `nextRelease.version`.
 
+##### Examples:
+
+```
+version 0.1.0  
+appVersion 1.16.0
+```
+
+1. patch (1.16.0 -> 1.16.1)  
+New chart version is 0.1.1
+
+2. minor (1.16.0 -> 1.17.0)  
+New chart version is 0.2.0
+
+3. major (1.16.0 -> 2.0.0)  
+New chart version is 1.0.0
+
 ## Configuration
 
 - path (required)  
