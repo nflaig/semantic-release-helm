@@ -1,7 +1,7 @@
 # semantic-release-helm
 
-This is a plugin for _semantic-release_. It updates `version` and `appVersion` of a [Helm](https://helm.sh/) chart's _
-Chart.yaml_.
+This is a plugin for _semantic-release_. It updates `version` and `appVersion` of a [Helm](https://helm.sh/) chart's
+_Chart.yaml_.
 
 The `version` is increased according to `nextRelease.type`, which can be one of
 
@@ -62,8 +62,8 @@ export AWS_SECRET_ACCESS_KEY=<SECRET_ACCESS_KEY>
 ## Example
 
 This will update `version` and `appVersion` in `./chart/Chart.yaml`
-and push the chart to `localhost:5000/repo/chart`. The image will be tagged with the value of `version` from _
-Chart.yaml_.
+and push the chart to `localhost:5000/repo/chart`. The image will be tagged with the value of `version` from
+_Chart.yaml_.
 
 ```
 {
