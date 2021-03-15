@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-helm",
-  "version": "1.5.2",
+  "version": "1.5.4",
   "description": "semantic-release plugin to update version and appVersion in a Helm chart",
   "main": "index.js",
   "repository": "https://github.com/m1pl/semantic-release-helm.git",
