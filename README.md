@@ -17,6 +17,10 @@ or _null_ if it's not valid.
 
 The `appVersion` is set to `nextRelease.version` if `onlyUpdateVersion`is false or unset.
 
+## BREAKING CHANGE in v2
+
+`path` has been renamed to `chartPath` to prevent config conflicts.
+
 ##### Examples:
 
 ```
@@ -35,7 +39,7 @@ appVersion 1.16.0
 
 ## Configuration
 
-- path (required) - string  
+- chartPath (required) - string
   Chart directory, where the _Chart.yaml_ is located.
 
 - registry (optional) - string  
@@ -71,7 +75,7 @@ _Chart.yaml_.
     [
       "semantic-release-helm",
       {
-        path: './chart',
+        chartPath: './chart',
         registry: 'localhost:5000/repo/chart'
       }
     ]
@@ -94,7 +98,7 @@ _Chart.yaml_.
     [
       "semantic-release-helm",
       {
-        path: './chart',
+        chartPath: './chart',
         registry: 's3://my-s3-bucket-repo/s3-prefix',
         onlyUpdateVersion: true,
       }
