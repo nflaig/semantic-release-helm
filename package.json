@@ -3,6 +3,10 @@
   "version": "2.0.1",
   "description": "semantic-release plugin to update version and appVersion in a Helm chart",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/**/*.js"
+  ],
   "repository": "https://github.com/m1pl/semantic-release-helm.git",
   "author": "Mihai Plasoianu <mihai@plasoianu.de>",
   "license": "MIT",
