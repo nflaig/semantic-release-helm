@@ -48,6 +48,12 @@ appVersion 1.16.0
 - onlyUpdateVersion (optional) - boolean (default: false)  
   Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application.
 
+- crPublish (optional) - boolean  
+  Enable chart-releaser publishing
+
+- crConfigPath (optional) - string  
+  Path to .ct.yaml chart-releaser configuration file.
+
 Pass credentials through environment variables accordingly:
 
 ```
