@@ -7,8 +7,8 @@
     "index.js",
     "lib/**/*.js"
   ],
-  "repository": "https://github.com/m1pl/semantic-release-helm.git",
-  "author": "Mihai Plasoianu <mihai@plasoianu.de>",
+  "repository": "https://github.com/nflaig/semantic-release-helm.git",
+  "author": "Nico Flaig <nflaig@protonmail.com>",
   "license": "MIT",
   "dependencies": {
     "aggregate-error": "^3.1.0",
