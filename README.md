@@ -95,7 +95,7 @@ _Chart.yaml_.
 ## ChartMuseum Example
 
 The [helm cm-push plugin](https://github.com/chartmuseum/helm-push) adds support for [ChartMuseum](https://github.com/helm/chartmuseum)
-repositories such as [Harbor](https://goharbor.io/).
+repositories such as [Harbor](https://github.com/goharbor/harbor).
 
 This will push the chart to the specified repository, e.g. `https://mydomain.com/chartrepo/myproject` and
 tag the chart with the value of `version` from _Chart.yaml_.
