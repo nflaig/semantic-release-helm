@@ -1,4 +1,4 @@
-# semantic-release-helm
+# semantic-release-helm3
 
 > **NOTE:** This is a fork of [semantic-release-helm](https://github.com/m1pl/semantic-release-helm) with added support
 > for [ChartMuseum](https://github.com/helm/chartmuseum) repositories such as [Harbor](https://goharbor.io/) by utilizing
@@ -75,7 +75,7 @@ _Chart.yaml_.
 {
   "plugins": [
     [
-      "semantic-release-helm",
+      "semantic-release-helm3",
       {
         chartPath: './chart',
         registry: 'localhost:5000/repo/chart'
@@ -101,7 +101,7 @@ It is important to set `isChartMuseum` to `true` and to specify the repository u
 {
   "plugins": [
     [
-      "semantic-release-helm",
+      "semantic-release-helm3",
       {
         chartPath: './chart',
         registry: 'https://mydomain.com/chartrepo/myproject',
@@ -125,7 +125,7 @@ _Chart.yaml_.
 {
   "plugins": [
     [
-      "semantic-release-helm",
+      "semantic-release-helm3",
       {
         chartPath: './chart',
         registry: 's3://my-s3-bucket-repo/s3-prefix',
