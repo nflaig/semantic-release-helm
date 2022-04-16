@@ -54,6 +54,9 @@ appVersion 1.16.0
 - crConfigPath (optional) - string  
   Path to .ct.yaml chart-releaser configuration file.
 
+- isChartMuseum (optional) - boolean
+  Enable ChartMuseum publishing
+
 Pass credentials through environment variables accordingly:
 
 ```
@@ -83,6 +86,33 @@ _Chart.yaml_.
       {
         chartPath: './chart',
         registry: 'localhost:5000/repo/chart'
+      }
+    ]
+  ]
+}
+```
+
+## ChartMuseum Example
+
+The [helm cm-push](https://github.com/chartmuseum/helm-push) plugin adds support for [ChartMuseum](https://github.com/helm/chartmuseum)
+repositories such as [Harbor](https://github.com/goharbor/harbor).
+
+This will push the chart to the specified repository, e.g. `https://mydomain.com/chartrepo/myproject` and
+tag the chart with the value of `version` from _Chart.yaml_.
+
+It is important to set `isChartMuseum` to `true` and to specify the repository url as `registry`.
+
+**Note:** It is required to have at least helm version `3.7.0` installed.
+
+```
+{
+  "plugins": [
+    [
+      "semantic-release-helm",
+      {
+        chartPath: './chart',
+        registry: 'https://mydomain.com/chartrepo/myproject',
+        isChartMuseum: true
       }
     ]
   ]
