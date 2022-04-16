@@ -7,19 +7,8 @@
 This is a plugin for _semantic-release_. It updates `version` and `appVersion` of a [Helm](https://helm.sh/) chart's
 _Chart.yaml_.
 
-The `version` is increased according to `nextRelease.type`, which can be one of
-
-- major
-- premajor
-- minor
-- preminor
-- patch
-- prepatch
-- prerelease
-
-or _null_ if it's not valid.
-
-The `appVersion` is set to `nextRelease.version` if `onlyUpdateVersion`is false or unset.
+The `version` and `appVersion` are updated according to `nextRelease.version`.
+Updating the `appVersion` is optional and can be disabled by setting `onlyUpdateVersion` to `true`.
 
 ## BREAKING CHANGE in v2
 
@@ -98,7 +87,7 @@ _Chart.yaml_.
 
 ## ChartMuseum Example
 
-The [helm cm-push plugin](https://github.com/chartmuseum/helm-push) adds support for [ChartMuseum](https://github.com/helm/chartmuseum)
+The [helm cm-push](https://github.com/chartmuseum/helm-push) plugin adds support for [ChartMuseum](https://github.com/helm/chartmuseum)
 repositories such as [Harbor](https://github.com/goharbor/harbor).
 
 This will push the chart to the specified repository, e.g. `https://mydomain.com/chartrepo/myproject` and
