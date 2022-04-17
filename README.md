@@ -1,5 +1,12 @@
 # semantic-release-helm3
 
+[semantic-release](https://github.com/semantic-release/semantic-release) plugin to publish a [Helm](https://helm.sh/) chart.
+
+[![Latest version][npm-version-badge]][npm-package]
+[![License][license-badge]][license]
+[![Downloads][npm-downloads-badge]][npm-package]
+[![Total Downloads][npm-total-downloads-badge]][npm-package]
+
 > **NOTE:** This is a fork of [semantic-release-helm](https://github.com/m1pl/semantic-release-helm) with added support
 > for [ChartMuseum](https://github.com/helm/chartmuseum) repositories such as [Harbor](https://goharbor.io/) by utilizing
 > the [helm cm-push](https://github.com/chartmuseum/helm-push) plugin.
@@ -130,3 +137,10 @@ _Chart.yaml_.
   ]
 }
 ```
+
+[license]: https://github.com/nflaig/semantic-release-helm/blob/master/LICENSE
+[npm-package]: https://www.npmjs.com/package/semantic-release-helm3
+[npm-version-badge]: https://img.shields.io/npm/v/semantic-release-helm3.svg?style=flat-square
+[npm-downloads-badge]: https://img.shields.io/npm/dw/semantic-release-helm3.svg?label=Downloads&style=flat-square&color=blue
+[npm-total-downloads-badge]: https://img.shields.io/npm/dt/semantic-release-helm3.svg?label=Total%20Downloads&style=flat-square&color=blue
+[license-badge]: https://img.shields.io/github/license/nflaig/semantic-release-helm.svg?color=blue&label=License&style=flat-square
