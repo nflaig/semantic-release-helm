@@ -7,6 +7,12 @@
 [![Downloads][npm-downloads-badge]][npm-package]
 [![Total Downloads][npm-total-downloads-badge]][npm-package]
 
+| Step               | Description                                               |
+| ------------------ | --------------------------------------------------------- |
+| `verifyConditions` | Verify required configuration and login to Helm registry. |
+| `prepare`          | Update `version` and/or `appVersion` in _Chart.yaml_.     |
+| `publish`          | Publish Helm chart to registry.                           |
+
 > **NOTE:** This is a fork of [semantic-release-helm](https://github.com/m1pl/semantic-release-helm) with added support
 > for [ChartMuseum](https://github.com/helm/chartmuseum) repositories such as [Harbor](https://goharbor.io/) by utilizing
 > the [helm cm-push](https://github.com/chartmuseum/helm-push) plugin.
