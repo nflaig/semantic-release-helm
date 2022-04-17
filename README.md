@@ -23,6 +23,12 @@ _Chart.yaml_.
 The `version` and `appVersion` are updated according to `nextRelease.version`.
 Updating the `appVersion` is optional and can be disabled by setting `onlyUpdateVersion` to `true`.
 
+## Install
+
+```bash
+npm install semantic-release-helm3 -D
+```
+
 ## BREAKING CHANGE in v2
 
 `path` has been renamed to `chartPath` to prevent config conflicts.
