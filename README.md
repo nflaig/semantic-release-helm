@@ -32,23 +32,18 @@ appVersion 1.16.0
 
 ## Configuration
 
-- chartPath (required) - string
-  Chart directory, where the _Chart.yaml_ is located.
+### Plugin Config
 
-- registry (optional) - string  
-  URI of a container registry.
+| Parameter           | Type      | Default | Required | Description                                                                                                      |
+| ------------------- | --------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------- |
+| `chartPath`         | `string`  | `""`    | `true`   | Chart directory, where the _Chart.yaml_ is located.                                                              |
+| `registry`          | `string`  | `""`    | `false`  | URI of a container registry.                                                                                     |
+| `onlyUpdateVersion` | `boolean` | `false` | `false`  | Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application. |
+| `crPublish`         | `boolean` | `false` | `false`  | Enable chart-releaser publishing.                                                                                |
+| `crConfigPath`      | `string`  | `""`    | `false`  | Path to .ct.yaml chart-releaser configuration file.                                                              |
+| `isChartMuseum`     | `boolean` | `false` | `false`  | Enable ChartMuseum publishing.                                                                                   |
 
-- onlyUpdateVersion (optional) - boolean (default: false)  
-  Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application.
-
-- crPublish (optional) - boolean  
-  Enable chart-releaser publishing
-
-- crConfigPath (optional) - string  
-  Path to .ct.yaml chart-releaser configuration file.
-
-- isChartMuseum (optional) - boolean
-  Enable ChartMuseum publishing
+### Environment Variables
 
 Pass credentials through environment variables accordingly:
 
