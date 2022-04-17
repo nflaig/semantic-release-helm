@@ -15,7 +15,7 @@
 
 > **NOTE:** This is a fork of [semantic-release-helm](https://github.com/m1pl/semantic-release-helm) with added support
 > for [ChartMuseum](https://github.com/helm/chartmuseum) repositories such as [Harbor](https://goharbor.io/) by utilizing
-> the [helm cm-push](https://github.com/chartmuseum/helm-push) plugin.
+> the [helm cm-push](https://github.com/chartmuseum/helm-push) plugin. It also supports helm versions >=3.7.0 and pre-release branches.
 
 This is a plugin for _semantic-release_. It updates `version` and `appVersion` of a [Helm](https://helm.sh/) chart's
 _Chart.yaml_.
