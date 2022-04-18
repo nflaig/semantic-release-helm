@@ -1,6 +1,6 @@
 # semantic-release-helm3
 
-[semantic-release](https://github.com/semantic-release/semantic-release) plugin to publish a [Helm](https://helm.sh/) chart.
+[semantic-release](https://github.com/semantic-release/semantic-release) plugin to publish [Helm](https://helm.sh/) charts.
 
 [![Latest version][npm-version-badge]][npm-package]
 [![License][license-badge]][license]
