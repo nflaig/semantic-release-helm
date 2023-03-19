@@ -61,7 +61,7 @@ appVersion 1.16.0
 | `crPublish`         | `boolean` | `false` | `false`  | Enable chart-releaser publishing.                                                                                |
 | `crConfigPath`      | `string`  | `""`    | `false`  | Path to .ct.yaml chart-releaser configuration file.                                                              |
 | `isChartMuseum`     | `boolean` | `false` | `false`  | Enable ChartMuseum publishing.                                                                                   |
-| `populateChangelog` | `boolean` | `false` | `false`  | Populate `artifacthub.io/changes` annotations with notes produced by `@semantic-release/release-notes-generator` compatible plugins |
+| `populateChangelog` | `boolean` | `false` | `false`  | Populate `artifacthub.io/changes` annotations with notes produced by `@semantic-release/release-notes-generator` compatible plugins. |
 
 ### Environment Variables
 
