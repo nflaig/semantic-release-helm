@@ -62,6 +62,7 @@ appVersion 1.16.0
 | `crConfigPath`      | `string`  | `""`    | `false`  | Path to .ct.yaml chart-releaser configuration file.                                                              |
 | `isChartMuseum`     | `boolean` | `false` | `false`  | Enable ChartMuseum publishing.                                                                                   |
 | `populateChangelog` | `boolean` | `false` | `false`  | Populate `artifacthub.io/changes` annotations with notes produced by `@semantic-release/release-notes-generator` compatible plugins. |
+| `packageArgs`       | `string`  | `""`    | `false`  | Additional parameters for the helm package command, e.g. `--key mykey --keyring ~/.gnupg/secring.gpg`            |
 
 ### Environment Variables
 
