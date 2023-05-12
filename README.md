@@ -54,7 +54,7 @@ appVersion 1.16.0
 ### Plugin Config
 
 | Parameter           | Type      | Default | Required | Description                                                                                                                           |
-|---------------------| --------- | ------- | -------- |---------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------- | --------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | `chartPath`         | `string`  | `""`    | `true`   | Chart directory, where the _Chart.yaml_ is located.                                                                                   |
 | `registry`          | `string`  | `""`    | `false`  | URI of a container registry.                                                                                                          |
 | `onlyUpdateVersion` | `boolean` | `false` | `false`  | Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application.                      |
