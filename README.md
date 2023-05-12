@@ -53,16 +53,17 @@ appVersion 1.16.0
 
 ### Plugin Config
 
-| Parameter           | Type      | Default | Required | Description                                                                                                      |
-| ------------------- | --------- | ------- | -------- | ---------------------------------------------------------------------------------------------------------------- |
-| `chartPath`         | `string`  | `""`    | `true`   | Chart directory, where the _Chart.yaml_ is located.                                                              |
-| `registry`          | `string`  | `""`    | `false`  | URI of a container registry.                                                                                     |
-| `onlyUpdateVersion` | `boolean` | `false` | `false`  | Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application. |
-| `crPublish`         | `boolean` | `false` | `false`  | Enable chart-releaser publishing.                                                                                |
-| `crConfigPath`      | `string`  | `""`    | `false`  | Path to .ct.yaml chart-releaser configuration file.                                                              |
-| `isChartMuseum`     | `boolean` | `false` | `false`  | Enable ChartMuseum publishing.                                                                                   |
-| `populateChangelog` | `boolean` | `false` | `false`  | Populate `artifacthub.io/changes` annotations with notes produced by `@semantic-release/release-notes-generator` compatible plugins. |
-| `packageArgs`       | `string`  | `""`    | `false`  | Additional parameters for the helm package command, e.g. `--key mykey --keyring ~/.gnupg/secring.gpg`            |
+| Parameter           | Type      | Default | Required | Description                                                                                                                           |
+|---------------------| --------- | ------- | -------- |---------------------------------------------------------------------------------------------------------------------------------------|
+| `chartPath`         | `string`  | `""`    | `true`   | Chart directory, where the _Chart.yaml_ is located.                                                                                   |
+| `registry`          | `string`  | `""`    | `false`  | URI of a container registry.                                                                                                          |
+| `onlyUpdateVersion` | `boolean` | `false` | `false`  | Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application.                      |
+| `crPublish`         | `boolean` | `false` | `false`  | Enable chart-releaser publishing.                                                                                                     |
+| `crConfigPath`      | `string`  | `""`    | `false`  | Path to .ct.yaml chart-releaser configuration file.                                                                                   |
+| `isChartMuseum`     | `boolean` | `false` | `false`  | Enable ChartMuseum publishing.                                                                                                        |
+| `populateChangelog` | `boolean` | `false` | `false`  | Populate `artifacthub.io/changes` annotations with notes produced by `@semantic-release/release-notes-generator` compatible plugins.  |
+| `packageArgs`       | `string`  | `""`    | `false`  | Additional parameters for the helm package command, e.g. `--key mykey --keyring ~/.gnupg/secring.gpg`                                 |
+| `cmPushArgs`        | `string`  | `""`    | `false`  | Additional parameters for the helm cm-push command (only relevant if `isChartMuseum` is set to true) e.g. `--context-path /repo/path` |
 
 ### Environment Variables
 
