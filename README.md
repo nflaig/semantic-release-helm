@@ -70,6 +70,7 @@ appVersion 1.16.0
 Pass credentials through environment variables accordingly:
 
 ```
+export REGISTRY_HOST=<HOST>
 export REGISTRY_USERNAME=<USERNAME>
 export REGISTRY_PASSWORD=<PASSWORD>
 ```
