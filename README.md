@@ -66,7 +66,6 @@ appVersion 1.16.0
 | `packageArgs`       | `string`  | `""`    | `false`  | Additional parameters for the helm package command, e.g. `--key mykey --keyring ~/.gnupg/secring.gpg`                                 |
 | `cmPushArgs`        | `string`  | `""`    | `false`  | Additional parameters for the helm cm-push command (only relevant if `isChartMuseum` is set to true) e.g. `--context-path /repo/path` |
 
-
 ### Environment Variables
 
 Pass credentials through environment variables accordingly:
