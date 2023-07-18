@@ -64,6 +64,8 @@ appVersion 1.16.0
 | `populateChangelog` | `boolean` | `false` | `false`  | Populate `artifacthub.io/changes` annotations with notes produced by `@semantic-release/release-notes-generator` compatible plugins.  |
 | `packageArgs`       | `string`  | `""`    | `false`  | Additional parameters for the helm package command, e.g. `--key mykey --keyring ~/.gnupg/secring.gpg`                                 |
 | `cmPushArgs`        | `string`  | `""`    | `false`  | Additional parameters for the helm cm-push command (only relevant if `isChartMuseum` is set to true) e.g. `--context-path /repo/path` |
+| `skipRegistryLogin`        | `string`  | `""`    | `false`  | Additional parameter to skip the `helm registry login` in the verifyConditions step |
+
 
 ### Environment Variables
 
