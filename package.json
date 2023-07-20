@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-helm3",
-  "version": "2.8.1",
+  "version": "2.8.2",
   "description": "Semantic-release plugin to publish Helm charts",
   "keywords": [
     "semantic-release",
