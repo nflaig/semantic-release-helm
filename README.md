@@ -35,7 +35,7 @@ npm install semantic-release-helm3 -D
 
 ##### Examples:
 
-```
+```txt
 version 0.1.0  
 appVersion 1.16.0
 ```
@@ -70,7 +70,7 @@ appVersion 1.16.0
 
 Pass credentials through environment variables accordingly:
 
-```
+```sh
 export REGISTRY_HOST=<HOST>
 export REGISTRY_USERNAME=<USERNAME>
 export REGISTRY_PASSWORD=<PASSWORD>
@@ -78,7 +78,7 @@ export REGISTRY_PASSWORD=<PASSWORD>
 
 For S3 pass the AWS credentials as environment variables:
 
-```
+```sh
 export AWS_REGION=<REGION>
 export AWS_ACCESS_KEY_ID=<ACCESS_KEY_ID>
 export AWS_SECRET_ACCESS_KEY=<SECRET_ACCESS_KEY>
@@ -90,7 +90,7 @@ This will update `version` and `appVersion` in `./chart/Chart.yaml`
 and push the chart to `localhost:5000/repo/chart`. The image will be tagged with the value of `version` from
 _Chart.yaml_.
 
-```
+```js
 {
   "plugins": [
     [
@@ -116,7 +116,7 @@ It is important to set `isChartMuseum` to `true` and to specify the repository u
 
 **Note:** It is required to have at least helm version `3.7.0` installed.
 
-```
+```js
 {
   "plugins": [
     [
@@ -140,7 +140,7 @@ This will update `version` in `./chart/Chart.yaml`
 and push the chart to `s3://my-s3-bucket/s3-prefix`. The image will be tagged with the value of `version` from
 _Chart.yaml_.
 
-```
+```js
 {
   "plugins": [
     [
