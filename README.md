@@ -68,6 +68,12 @@ appVersion 1.16.0
 
 ### Environment Variables
 
+Set chart path
+
+```sh
+export CHART_PATH=<dir>
+```
+
 Pass credentials through environment variables accordingly:
 
 ```sh
