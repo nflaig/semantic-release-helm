@@ -15,14 +15,21 @@
     "index.js",
     "lib/**/*.js"
   ],
+  "scripts": {
+    "test": "jest"
+  },
   "repository": "https://github.com/nflaig/semantic-release-helm.git",
   "author": "Nico Flaig <nflaig@protonmail.com>",
   "license": "MIT",
   "dependencies": {
     "aggregate-error": "^3.1.0",
     "execa": "^5.0.0",
-    "js-yaml": "^4.1.0",
     "path": "^0.12.7",
-    "semver": "^7.3.4"
+    "semver": "^7.3.4",
+    "yaml": "^2.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mock-fs": "^5.2.0"
   }
 }
