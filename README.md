@@ -55,7 +55,7 @@ appVersion 1.16.0
 
 | Parameter           | Type      | Default | Required | Description                                                                                                                           |
 | ------------------- | --------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `chartPath`         | `string`  | `""`    | `true`   | Chart directory, where the _Chart.yaml_ is located.                                                                                   |
+| `chartPath`         | `string`  | `cwd`    | `false`   | Chart directory, where the _Chart.yaml_ is located.  If parameter isn't defined, uses the `CHART_PATH` environment variable.  If that isn't defined, ultimately falls back to semantic-release's current working directory (`cwd`).                                                                                   |
 | `registry`          | `string`  | `""`    | `false`  | URI of a container registry.                                                                                                          |
 | `onlyUpdateVersion` | `boolean` | `false` | `false`  | Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application.                      |
 | `crPublish`         | `boolean` | `false` | `false`  | Enable chart-releaser publishing.                                                                                                     |
