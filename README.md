@@ -55,7 +55,7 @@ appVersion 1.16.0
 
 | Parameter           | Type      | Default | Required | Description                                                                                                                           |
 | ------------------- | --------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `chartPath`         | `string`  | `""`    | `true`   | Chart directory, where the _Chart.yaml_ is located.                                                                                   |
+| `chartPath`         | `string`  | `cwd`    | `false`   | Path to chart directory where _Chart.yaml_ is located. Defaults to the `CHART_PATH` environment variable, or ultimately falls back to current working directory (`cwd`) if neither is set.                                                                                   |
 | `registry`          | `string`  | `""`    | `false`  | URI of a container registry.                                                                                                          |
 | `onlyUpdateVersion` | `boolean` | `false` | `false`  | Don't change `appVersion` if this is true. Useful if your chart is in a different git repo than the application.                      |
 | `crPublish`         | `boolean` | `false` | `false`  | Enable chart-releaser publishing.                                                                                                     |
